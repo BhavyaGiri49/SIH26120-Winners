@@ -1,0 +1,52 @@
+{
+  "trained_at": "2026-09-28T09:10:46.597238+00:00",
+  "elapsed_s": 4.49,
+  "n_rows": 29040,
+  "n_wells_train": 9,
+  "n_wells_test": 3,
+  "regressor": {
+    "features": [
+      "t_since_steam",
+      "T_peak",
+      "tau",
+      "S",
+      "N"
+    ],
+    "target": "output",
+    "r2": 0.9834,
+    "pass_bar": 0.95,
+    "passed": true,
+    "feature_importances": {
+      "t_since_steam": 0.8594,
+      "T_peak": 0.0902,
+      "tau": 0.0141,
+      "S": 0.0093,
+      "N": 0.027
+    }
+  },
+  "classifier": {
+    "features": [
+      "mu_cp",
+      "mu_slope_3d",
+      "mu_cp_lag3",
+      "N",
+      "S",
+      "t_since_steam",
+      "R"
+    ],
+    "target": "rod_float_next_k",
+    "recall": 0.9939,
+    "roc_auc": 0.9996,
+    "pass_bar": 0.9,
+    "passed": true,
+    "feature_importances": {
+      "mu_cp": 0.0008,
+      "mu_slope_3d": 0.0003,
+      "mu_cp_lag3": 0.0402,
+      "N": 0.0063,
+      "S": 0.0006,
+      "t_since_steam": 0.0621,
+      "R": 0.8899
+    }
+  }
+}

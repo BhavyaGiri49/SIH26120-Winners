@@ -1,0 +1,13 @@
+backend/.venv
+backend/__pycache__
+backend/**/__pycache__
+backend/.pytest_cache
+backend/events.jsonl
+backend/data
+
+frontend/node_modules
+frontend/dist
+
+.git
+.DS_Store
+*.pyc

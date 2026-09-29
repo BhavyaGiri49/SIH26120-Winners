@@ -1,0 +1,57 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-hmi-bg: #0a0d12;
+  --color-hmi-panel: #10141b;
+  --color-hmi-panel-2: #161b24;
+  --color-hmi-border: #232a36;
+  --color-hmi-text: #d7dde6;
+  --color-hmi-dim: #6b7688;
+  --color-hmi-accent: #35d0e0;
+  --color-hmi-green: #22d17a;
+  --color-hmi-amber: #f5a524;
+  --color-hmi-red: #ef4444;
+  --font-mono: 'SF Mono', ui-monospace, 'Cascadia Code', Menlo, Consolas, monospace;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: var(--color-hmi-bg);
+  color: var(--color-hmi-text);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif;
+  overscroll-behavior: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-hmi-border);
+  border-radius: 4px;
+}
+
+.hmi-panel {
+  background: var(--color-hmi-panel);
+  border: 1px solid var(--color-hmi-border);
+}
+
+.status-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+}
